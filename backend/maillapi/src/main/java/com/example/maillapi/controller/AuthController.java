@@ -23,14 +23,15 @@ import org.springframework.web.bind.annotation.RequestBody;
 public class AuthController {
   private final AuthService authService;
 
+  //주석만 일단 달아봐
   @PostMapping("/register")
-  @Operation(summary = "회원가입",description = "아이디,비밀번호, 역할을 입력해서 가입")
+  @Operation(summary = "회원가입",description = "아이디,비밀번호 역할을 입력해서 가입")
   public String register(@RequestBody RegisterRequest request) {
     return authService.register(request);
   }
 
   @PostMapping("/login")
-  @Operation(summary = "로그인",description = "아이디,비밀번호로 로그인 후 토큰 반환")
+  @Operation(summary = "로그인",description = "아이디,비밀번호로 로그인")
   public LoginResponse login(@RequestBody LoginRequest request) {
     return authService.login(request);
   }
