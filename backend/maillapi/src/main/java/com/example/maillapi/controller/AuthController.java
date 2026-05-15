@@ -24,7 +24,7 @@ public class AuthController {
   private final AuthService authService;
 
   @PostMapping("/register")
-  @Operation(summary = "회원가입",description = "아이디,비밀번호, 역할을 입력해서 가입")
+  @Operation(summary = "회원가입",description = "아이디,비밀번호 역할을 입력해서 가입")
   public String register(@RequestBody RegisterRequest request) {
     return authService.register(request);
   }
