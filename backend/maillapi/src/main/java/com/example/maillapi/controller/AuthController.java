@@ -23,6 +23,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 public class AuthController {
   private final AuthService authService;
 
+  //주석만 일단 달아봐
   @PostMapping("/register")
   @Operation(summary = "회원가입",description = "아이디,비밀번호 역할을 입력해서 가입")
   public String register(@RequestBody RegisterRequest request) {
