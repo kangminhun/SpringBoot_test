@@ -30,7 +30,7 @@ public class AuthController {
   }
 
   @PostMapping("/login")
-  @Operation(summary = "로그인",description = "아이디,비밀번호로 로그인 후 토큰 반환")
+  @Operation(summary = "로그인",description = "아이디,비밀번호로 로그인")
   public LoginResponse login(@RequestBody LoginRequest request) {
     return authService.login(request);
   }
