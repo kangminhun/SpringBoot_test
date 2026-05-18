@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import api from '../api/axios';
 
 // 로그인 페이지 컴포넌트
+// 귀찮 빨리 끝나자
 function Login() {
   const navigate = useNavigate();
 
