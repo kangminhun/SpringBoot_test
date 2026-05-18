@@ -4,6 +4,7 @@ function Home() {
   const navigate = useNavigate(); // 페이지 이동 함수
   //여기에 주석 달아봐
   //테스트
+  //테스트(Guest)
   return (
     <div style={{ textAlign: 'center', marginTop: '100px' }}>
       <h1>Mall에 오신 것을 환영합니다</h1>
